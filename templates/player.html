@@ -1,0 +1,26 @@
+﻿$def with (urllist)
+<div id="mediaplayer">JW Player goes here</div>
+<script type="text/javascript" src="js/jwplayer.js"></script>
+<script type="text/javascript">
+    jwplayer("mediaplayer").setup({
+        flashplayer: "js/player.swf",
+        playlist:[
+        $for url in urllist:
+            {file: "$url"},
+        ],
+		image: "preview.jpg",
+        width: "640",
+        height: "480",
+	});
+
+function changeVideoSrc(url)
+{
+    jwplayer("mediaplayer").setup({
+            flashplayer: "js/player.swf",
+            file:url,
+            image: "preview.jpg",
+            width: "640",
+            height: "480"
+            });
+}
+</script>

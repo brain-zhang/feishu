@@ -1,0 +1,55 @@
+﻿$def with(form, content, urllist)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="cs" http-equiv="content-language">
+    <meta content="优酷 url 捕获" name="keywords">
+    <meta content="all,follow" name="robots">
+    <link media="screen,projection" rel="stylesheet" type="text/css" href="css/screen.css">
+    <title>优酷视频脱水工具</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <p>飞鼠视频下载--脱水工具</p>
+        </div>
+
+        <div id="content" class="clearfix">
+            <div class="bk1">
+            <form method="post">
+                <p>请输入您收看的视频URL：(例如http://v.youku.com/v_show/id_XMjkzNTY0NTI=.html)</p>
+                <p>目前只支持优酷</p>
+                <p>$:form.render()</p>
+                <p><input class="button" id="capturebtn" type="submit" value="去广告捕获"></p>
+            </form>
+            <div>
+            
+            <hr>
+
+            <div class="bk1">
+                <p>嗅探结果<p>
+                <p>结果为视频分段列表，您可直接点击播放，或右键'另存为'下载</p>
+                    $for url in urllist:
+                        <a id="srllink" href=$url onclick="changeVideoSrc(this.href); return false;">第$loop.index段</a></td>  
+            </div>
+
+            <hr>
+
+            <div class="bk1">
+                <p>在线观看</p>
+                <p>$:content</p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <a target="_blank" href="http://sae.sina.com.cn">
+                <img title="Powered by Sina App Engine" src="http://static.sae.sina.com.cn/image/poweredby/poweredby.png">
+            </a>
+            <br>
+            memoryboxes@163.com
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+:focus {
+    outline: 0 none;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none outside none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+.clearfix {zoom:1} 
+.clearfix:after { 
+content: '\20'; 
+display: block;
+clear: both; 
+}
+
+/*-----------------------------------------------------*/
+body{background:#222;}
+#main{
+	padding:1px;
+	width:700px;
+	margin:15px auto;
+	background:#fff;
+}
+#header{
+	background:url(../img/sprites.gif) 0 100%;
+	padding:20px 0 30px 30px;
+	color:#fff;
+	font-size:26px;
+    border-bottom:#39AECF 5px solid;
+}
+#content{
+margin-top:1px;
+border-top:#C00 1px dotted;
+}
+.bk1{
+margin:10px;
+}
+.bk1 p{
+padding:6px;
+line-height:1.6;
+}
+
+#userurl{
+    padding:5px;
+    width:500px;
+    margin:5px auto;
+}
+
+#footer{
+	text-align:right;
+	margin:20px 10px;
+	font-size:12px;
+	color:#666;
+
